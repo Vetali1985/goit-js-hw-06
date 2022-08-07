@@ -15,7 +15,7 @@ function increment() {
 
 btnEl[0].addEventListener(`click`, decrement)
     
-btnEl[1].addEventListener(`click`,decrement)
+btnEl[1].addEventListener(`click`,increment)
 
 
 
