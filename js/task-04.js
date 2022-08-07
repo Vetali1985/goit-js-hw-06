@@ -8,7 +8,7 @@ function decrement() {
 }
 
 function increment() {
-        valueEl.textContent = (counterValue = 1)
+        valueEl.textContent = (counterValue += 1)
 }
 
 
