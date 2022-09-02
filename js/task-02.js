@@ -8,15 +8,15 @@ const ingredients = [
 ];
 
 const task = document.querySelector(`#ingredients`)
- ingredients.forEach(el => {
+ const rt = ingredients.map(el => {
  const ingEl = document.createElement(`li`)
   ingEl.classList.add(`item`)
-  ingEl.textContent = (el)
-   task.append(ingEl)
+   ingEl.textContent = (el);
    
+   return ingEl;
 })
 
-
+task.append(...rt)
   
   
  

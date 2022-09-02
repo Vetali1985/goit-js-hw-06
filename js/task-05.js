@@ -7,6 +7,9 @@ console.log(refs.spanEl)
 refs.inputEl.addEventListener(`input`, enterName)
 
 function enterName(event) {
-     refs.spanEl.textContent = (event.currentTarget.value)   
+    refs.inputEl !== " "
+        ? refs.spanEl.textContent = (event.currentTarget.value)
+        : refs.spanEl.textContent = 'Anon';
+     
 }
     
