@@ -1,15 +1,12 @@
-const refs = {
-    inputEl: document.querySelector(`input`),
-    spanEl: document.querySelector(`span`)
-}
-console.log(refs.inputEl)
-console.log(refs.spanEl)
-refs.inputEl.addEventListener(`input`, enterName)
 
-function enterName(event) {
-    refs.inputEl !== " "
-        ? refs.spanEl.textContent = (event.currentTarget.value)
-        : refs.spanEl.textContent = 'Anon';
-     
+const input = document.querySelector("#name-input");
+const spanAnonymous = document.querySelector("#name-output");
+
+input.addEventListener('input', inputChange)
+
+function inputChange(event) {
+    console.log(event.currentTarget.value);
+    if (input.value === "") {
+        return spanAnonymous.textContent = "Anonymous"
+    } else spanAnonymous.textContent = event.currentTarget.value
 }
-    
